@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Open Service Broker</title>
+        <title>Bink Weather</title>
         <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}"/>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/material.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
@@ -15,47 +15,49 @@
 		  <header class="mdl-layout__header">
 		    <div class="mdl-layout__header-row">
 		      <!-- Title -->
-		      <span class="mdl-layout-title">AOS OSB</span>
+		      <span class="mdl-layout-title">Bink Weather</span>
 		      <!-- Add spacer, to align navigation to the right -->
 		      <div class="mdl-layout-spacer"></div>
-		      <!-- Navigation. We hide it in small screens. -->
-		      <nav class="mdl-navigation mdl-layout--large-screen-only">
-		        <a class="mdl-navigation__link" href="">Link</a>
-		        <a class="mdl-navigation__link" href="">Link</a>
-		        <a class="mdl-navigation__link" href="">Link</a>
-		        <a class="mdl-navigation__link" href="">Link</a>
-		      </nav>
 		    </div>
 		  </header>
 		  <div class="mdl-layout__drawer">
 		    <span class="mdl-layout-title">Menu</span>
 		    <nav class="mdl-navigation">
-		      <a class="mdl-navigation__link" href="">Link</a>
-		      <a class="mdl-navigation__link" href="">Link</a>
-		      <a class="mdl-navigation__link" href="">Link</a>
-		      <a class="mdl-navigation__link" href="">Link</a>
+		      <a class="mdl-navigation__link" href="#">Hire Me</a>
+		      <a class="mdl-navigation__link" href="#">I Will Do The</a>
+		      <a class="mdl-navigation__link" href="#">Weather To</a>
+		      <a class="mdl-navigation__link" href="#">Your Apps</a>
+		      <a class="mdl-navigation__link" href="#">&#x2600;&#x2600;&#x2600;</a>
+
 		    </nav>
 		  </div>
 		  <main class="mdl-layout__content">
 		    <div class="page-content">
-		        <h1>Weather App</h1>
+				<div class="mdl-grid">
+				  <div class="mdl-cell mdl-cell--6-col text-main">
+			        <h1>Weather App</h1>
 
-		                <p>Please enter the name of the city whose weather you want to know:</p>
+			                <p class="text-main">Please enter the name of the city whose weather you want to know:</p>
 
-		        <form method="POST" action="http://0.0.0.0:9096/weather">
-		                Name of the city :
-			    <select name="insee">
-				<option value="75101" selected>Paris</option>
-				<option value="62193">Calais</option>
-				<option value="67482">Strasbourg</option>
-				<option value="29019">Brest</option>
-				<option value="18033">Bourges</option>
-				<option value="31555">Toulouse</option>
-				<option value="83137">Toulon</option>
-			    </select>
-		            <br><br>
-		            <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-		        </form>    	
+			        <form method="POST" action="http://0.0.0.0:9096/weather">
+			                Name of the city :
+				    <select name="insee">
+					<option value="75101" selected>Paris</option>
+					<option value="62193">Calais</option>
+					<option value="67482">Strasbourg</option>
+					<option value="29019">Brest</option>
+					<option value="18033">Bourges</option>
+					<option value="31555">Toulouse</option>
+					<option value="83137">Toulon</option>
+				    </select>
+			            <br><br>
+			            <input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" value="send">
+			        </form>  					  	
+				  </div>
+				  <div class="mdl-cell mdl-cell--6-col">
+					<img src="static/img/cartes/carte.png">
+				  </div>
+				</div>
 		    </div>
 		  </main>
 		</div>

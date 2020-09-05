@@ -33,14 +33,14 @@ def get_weather():
 
         saturday = None
         for i,f in enumerate(forecast):
-            day = dateutil.parser.parse(f['datetime']).strftime('%H:%M  ') # today : 0, tomorrow : 1, etc. (13 max)
+            day = dateutil.parser.parse(f['datetime']).strftime('%H:%M  ') # today : 0, tomorrow : 1, etc. 
 
     cityname = city['name']
-    temperature = forecast[0]['temp2m']
-    rain = forecast[0]['rr10']
+    temperature = str(forecast[0]['temp2m'])+"°C"
+    rain = str(forecast[0]['rr10'])+"%"
 
     info_weather = {
-        "Name of the city" : cityname,
+        "City" : cityname,
         "Temperature" : temperature,
         "Precipitation" : rain
     }
