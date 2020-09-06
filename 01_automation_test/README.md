@@ -3,7 +3,7 @@
 For this exercise, I am using my favorite automation tool, Jenkins.
 To be able to launch my `Jenkinsfile` it is enough to:
 
-![Launch procedure](https://fake-path.png)
+![Launch procedure](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/01_automation_test/images/screen_jenk3.png)
 
 - Create a `Pipeline` project
 - Choose the option `Pipeline script from SCM`
@@ -17,6 +17,6 @@ To be able to launch my `Jenkinsfile` it is enough to:
 
 ### Result
 
-![Result](https://fake-path.png)
+![Result](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/01_automation_test/images/screen_jenk1.png)
 
-![Result 2](https://fake-path.png)
+![Result 2](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/01_automation_test/images/screen_jenk2.png)

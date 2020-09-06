@@ -23,7 +23,7 @@ You will then be asked to enter 3 pieces of information:
 - Region you want
 - And the area
 
-![Setting variables](https://fake-path.png)
+![Setting variables](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra1.png)
 
 After that if there is no error you can launch the command `terraform apply` by giving us the 3 previous informations.
 
@@ -40,9 +40,14 @@ The script is then responsible for creating the following elements:
     - 1 Ubuntu
 - Setting up an Nginx server in each VM
 
-![Screen GCP 1](https://fake-path.png)
-![Screen GCP 2](https://fake-path.png)
-![Screen GCP 3](https://fake-path.png)
-![Screen GCP 4](https://fake-path.png)
-![Screen GCP 5](https://fake-path.png)
-![Screen GCP 6](https://fake-path.png)
+![Screen GCP 1](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra2.png)
+
+![Screen GCP 2](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra3.png)
+
+![Screen GCP 3](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra4.png)
+
+![Screen GCP 4](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra5.png)
+
+![Screen GCP 5](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra6.png)
+
+![Screen GCP 6](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra7.png)
