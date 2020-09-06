@@ -40,6 +40,8 @@ The script is then responsible for creating the following elements:
     - 1 Ubuntu
 - Setting up an Nginx server in each VM
 
+### Results on GCP:
+
 ![Screen GCP 1](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra2.png)
 
 ![Screen GCP 2](https://raw.githubusercontent.com/SofianeHadjadj/interview-test-devops/master/03_infrastructure_test/images/screen_terra3.png)
