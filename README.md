@@ -2,7 +2,7 @@
 
 ## DevOps Tests
 
-Hello recruiters! I really appreciated the tests that you put in place because I found that they were relevant to the proposed mission and especially that the difficulty corresponded well to the Junior level.
+Hello recruiters! I really appreciated the tests that you put in place because I found that it was relevant to the proposed mission and especially that the difficulty corresponded well to the Junior level.
 
 Good discovery of my code.
 
