@@ -1,0 +1,29 @@
+.page-content {
+    padding-left:50px;
+}
+.result-temp {
+	margin-top: 50px;
+}
+.weather-temp {
+	text-align: left;
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 45px;
+}
+
+#stage {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.weath-part {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.text-main {
+	font-size: 25px;
+}

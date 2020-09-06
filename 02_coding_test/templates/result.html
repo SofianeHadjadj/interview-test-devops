@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Bink Weather</title>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/material.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script type="text/javascript" src="{{ url_for('static', filename='js/material.min.js') }}"></script>
+    </head>
+    <body>
+		<!-- Always shows a header, even in smaller screens. -->
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		  <header class="mdl-layout__header">
+		    <div class="mdl-layout__header-row">
+		      <!-- Title -->
+		      <span class="mdl-layout-title">Bink Weather</span>
+		      <!-- Add spacer, to align navigation to the right -->
+		      <div class="mdl-layout-spacer"></div>
+		    </div>
+		  </header>
+		  <div class="mdl-layout__drawer">
+		    <span class="mdl-layout-title">Menu</span>
+		    <nav class="mdl-navigation">
+		      <a class="mdl-navigation__link" href="#">Hire Me</a>
+		      <a class="mdl-navigation__link" href="#">I Will Do The</a>
+		      <a class="mdl-navigation__link" href="#">Weather To</a>
+		      <a class="mdl-navigation__link" href="#">Your Apps</a>
+		      <a class="mdl-navigation__link" href="#">&#x2600;&#x2600;&#x2600;</a>
+		    </nav>
+		  </div>
+		  <main class="mdl-layout__content">
+		    <div class="page-content">
+
+				<div class="mdl-grid">
+				  <div class="mdl-cell mdl-cell--6-col">
+			        <h1>Weather forecast</h1>
+			    
+			    	<div class="result-temp">
+					{% for key, value in result.items() %}
+						<div class="weather-temp"> {{ key }} : {{ value }} </div>
+					{% endfor %}
+				  	</div>	
+				  	<a href="http://0.0.0.0:9094/">
+					  	<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+						  Go Back
+						</button>
+				  	</a>				  	
+				  </div>
+				  <div class="mdl-cell mdl-cell--6-col">
+					<img src="static/img/cartes/carte.png">
+				  </div>
+				</div>
+
+			  	<div id="stage"></div>
+		    </div>
+		  </main>
+		</div>
+
+		<!-- <script type="text/javascript" src="{{ url_for('static', filename='js/hireme.js') }}"></script>
+ -->
+    </body>
+</html>
